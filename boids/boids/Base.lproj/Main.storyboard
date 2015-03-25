@@ -13,12 +13,12 @@
                         <viewControllerLayoutGuide type="bottom" id="uw7-hC-Vx3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5jz-q8-cP6" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="768" height="1024"/>
+                    <size key="freeformSize" width="1024" height="768"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9N-AP-RcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
