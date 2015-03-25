@@ -6,16 +6,21 @@
 //  Copyright (c) 2015 Bo Tembunkiart. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BoidViewController.h"
+#import <SpriteKit/SpriteKit.h>
 
-@interface ViewController ()
+@interface BoidViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BoidViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    SKView *spriteView = (SKView *) self.view;
+    spriteView.showsDrawCount = YES;
+    spriteView.showsNodeCount = YES;
+    spriteView.showsFPS = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

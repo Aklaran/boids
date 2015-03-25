@@ -13,7 +13,9 @@
 		1E3EA6A71AC3286D00106D27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E3EA6A61AC3286D00106D27 /* Images.xcassets */; };
 		1E3EA6AA1AC3286D00106D27 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E3EA6A81AC3286D00106D27 /* LaunchScreen.xib */; };
 		1E3EA6B61AC3286D00106D27 /* boidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EA6B51AC3286D00106D27 /* boidsTests.m */; };
-		1E3EA6C31AC32AAA00106D27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EA6C21AC32AAA00106D27 /* ViewController.m */; };
+		1E3EA6C31AC32AAA00106D27 /* BoidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EA6C21AC32AAA00106D27 /* BoidViewController.m */; };
+		1E3EA6C71AC337A400106D27 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E3EA6C61AC337A400106D27 /* SpriteKit.framework */; };
+		1E3EA6D01AC33A8C00106D27 /* BoidScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E3EA6CF1AC33A8C00106D27 /* BoidScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +40,11 @@
 		1E3EA6AF1AC3286D00106D27 /* boidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3EA6B41AC3286D00106D27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E3EA6B51AC3286D00106D27 /* boidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boidsTests.m; sourceTree = "<group>"; };
-		1E3EA6C11AC32AAA00106D27 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1E3EA6C21AC32AAA00106D27 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1E3EA6C11AC32AAA00106D27 /* BoidViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoidViewController.h; sourceTree = "<group>"; };
+		1E3EA6C21AC32AAA00106D27 /* BoidViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoidViewController.m; sourceTree = "<group>"; };
+		1E3EA6C61AC337A400106D27 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = ../../../../../../../System/Library/Frameworks/SpriteKit.framework; sourceTree = "<group>"; };
+		1E3EA6CE1AC33A8C00106D27 /* BoidScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BoidScene.h; sourceTree = "<group>"; };
+		1E3EA6CF1AC33A8C00106D27 /* BoidScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoidScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E3EA6C71AC337A400106D27 /* SpriteKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		1E3EA68D1AC3286D00106D27 = {
 			isa = PBXGroup;
 			children = (
+				1E3EA6C61AC337A400106D27 /* SpriteKit.framework */,
 				1E3EA6981AC3286D00106D27 /* boids */,
 				1E3EA6B21AC3286D00106D27 /* boidsTests */,
 				1E3EA6971AC3286D00106D27 /* Products */,
@@ -82,7 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				1E3EA6BF1AC32AAA00106D27 /* Assets */,
+				1E3EA6C51AC3321500106D27 /* Models */,
 				1E3EA6C01AC32AAA00106D27 /* Controllers */,
+				1E3EA6CD1AC33A8C00106D27 /* Scenes */,
 				1E3EA6C41AC32ACC00106D27 /* Storyboards */,
 				1E3EA6991AC3286D00106D27 /* Supporting Files */,
 			);
@@ -128,8 +137,8 @@
 		1E3EA6C01AC32AAA00106D27 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1E3EA6C11AC32AAA00106D27 /* ViewController.h */,
-				1E3EA6C21AC32AAA00106D27 /* ViewController.m */,
+				1E3EA6C11AC32AAA00106D27 /* BoidViewController.h */,
+				1E3EA6C21AC32AAA00106D27 /* BoidViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +150,22 @@
 				1E3EA6A31AC3286D00106D27 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		1E3EA6C51AC3321500106D27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E3EA6CD1AC33A8C00106D27 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1E3EA6CE1AC33A8C00106D27 /* BoidScene.h */,
+				1E3EA6CF1AC33A8C00106D27 /* BoidScene.m */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E3EA6C31AC32AAA00106D27 /* ViewController.m in Sources */,
+				1E3EA6C31AC32AAA00106D27 /* BoidViewController.m in Sources */,
 				1E3EA69F1AC3286D00106D27 /* AppDelegate.m in Sources */,
+				1E3EA6D01AC33A8C00106D27 /* BoidScene.m in Sources */,
 				1E3EA69C1AC3286D00106D27 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +400,7 @@
 				INFOPLIST_FILE = boids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -384,6 +411,7 @@
 				INFOPLIST_FILE = boids/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
